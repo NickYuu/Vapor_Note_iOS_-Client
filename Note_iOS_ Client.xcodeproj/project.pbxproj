@@ -13,6 +13,16 @@
 		813AD9101EAB7272008EE06E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813AD90F1EAB7272008EE06E /* Assets.xcassets */; };
 		813AD9131EAB7272008EE06E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813AD9111EAB7272008EE06E /* LaunchScreen.storyboard */; };
 		813AD91C1EAB7389008EE06E /* CheckAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD91B1EAB7389008EE06E /* CheckAccountVC.swift */; };
+		813AD9221EAB81DE008EE06E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD91F1EAB81DE008EE06E /* User.swift */; };
+		813AD9231EAB81DE008EE06E /* NpteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD9201EAB81DE008EE06E /* NpteAPI.swift */; };
+		813AD9241EAB81DE008EE06E /* NoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813AD9211EAB81DE008EE06E /* NoteData.swift */; };
+		813ADB3B1EAB87FD008EE06E /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB3A1EAB87FD008EE06E /* UserInfo.swift */; };
+		813ADB3D1EAB91EC008EE06E /* LoginOrRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB3C1EAB91EC008EE06E /* LoginOrRegisterVC.swift */; };
+		813ADB3F1EAB96FD008EE06E /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB3E1EAB96FD008EE06E /* UIAlertController.swift */; };
+		813ADB411EAB9AE9008EE06E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB401EAB9AE9008EE06E /* UIView.swift */; };
+		813ADB441EAC9645008EE06E /* MainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB431EAC9645008EE06E /* MainPageCell.swift */; };
+		813ADB461EACA624008EE06E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB451EACA624008EE06E /* MainTableViewController.swift */; };
+		813ADB481EACADE1008EE06E /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB471EACADE1008EE06E /* Content.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +35,16 @@
 		813AD9121EAB7272008EE06E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		813AD9141EAB7272008EE06E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		813AD91B1EAB7389008EE06E /* CheckAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckAccountVC.swift; sourceTree = "<group>"; };
+		813AD91F1EAB81DE008EE06E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		813AD9201EAB81DE008EE06E /* NpteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NpteAPI.swift; sourceTree = "<group>"; };
+		813AD9211EAB81DE008EE06E /* NoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteData.swift; sourceTree = "<group>"; };
+		813ADB3A1EAB87FD008EE06E /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		813ADB3C1EAB91EC008EE06E /* LoginOrRegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOrRegisterVC.swift; sourceTree = "<group>"; };
+		813ADB3E1EAB96FD008EE06E /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		813ADB401EAB9AE9008EE06E /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		813ADB431EAC9645008EE06E /* MainPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageCell.swift; sourceTree = "<group>"; };
+		813ADB451EACA624008EE06E /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		813ADB471EACADE1008EE06E /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		C1EBDC18098C649EEFCB7E2C /* Pods_Note_iOS__Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Note_iOS__Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,8 +83,14 @@
 			children = (
 				813AD9081EAB7272008EE06E /* AppDelegate.swift */,
 				813AD90C1EAB7272008EE06E /* Main.storyboard */,
-				813AD91A1EAB7290008EE06E /* SupportingFile */,
+				813ADB3A1EAB87FD008EE06E /* UserInfo.swift */,
 				813AD91B1EAB7389008EE06E /* CheckAccountVC.swift */,
+				813ADB3C1EAB91EC008EE06E /* LoginOrRegisterVC.swift */,
+				813AD91D1EAB81DE008EE06E /* API */,
+				813ADB421EABA06C008EE06E /* Extension */,
+				813AD91A1EAB7290008EE06E /* SupportingFile */,
+				813ADB431EAC9645008EE06E /* MainPageCell.swift */,
+				813ADB451EACA624008EE06E /* MainTableViewController.swift */,
 			);
 			path = "Note_iOS_ Client";
 			sourceTree = "<group>";
@@ -77,6 +103,34 @@
 				813AD9141EAB7272008EE06E /* Info.plist */,
 			);
 			name = SupportingFile;
+			sourceTree = "<group>";
+		};
+		813AD91D1EAB81DE008EE06E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				813AD91E1EAB81DE008EE06E /* Model */,
+				813AD9201EAB81DE008EE06E /* NpteAPI.swift */,
+				813AD9211EAB81DE008EE06E /* NoteData.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		813AD91E1EAB81DE008EE06E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				813AD91F1EAB81DE008EE06E /* User.swift */,
+				813ADB471EACADE1008EE06E /* Content.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		813ADB421EABA06C008EE06E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				813ADB3E1EAB96FD008EE06E /* UIAlertController.swift */,
+				813ADB401EAB9AE9008EE06E /* UIView.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		D92BCECE83EE3EC55033DCF6 /* Frameworks */ = {
@@ -220,8 +274,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813ADB461EACA624008EE06E /* MainTableViewController.swift in Sources */,
 				813AD9091EAB7272008EE06E /* AppDelegate.swift in Sources */,
+				813ADB441EAC9645008EE06E /* MainPageCell.swift in Sources */,
+				813AD9221EAB81DE008EE06E /* User.swift in Sources */,
+				813ADB3D1EAB91EC008EE06E /* LoginOrRegisterVC.swift in Sources */,
+				813AD9231EAB81DE008EE06E /* NpteAPI.swift in Sources */,
+				813ADB3F1EAB96FD008EE06E /* UIAlertController.swift in Sources */,
+				813AD9241EAB81DE008EE06E /* NoteData.swift in Sources */,
+				813ADB3B1EAB87FD008EE06E /* UserInfo.swift in Sources */,
+				813ADB411EAB9AE9008EE06E /* UIView.swift in Sources */,
 				813AD91C1EAB7389008EE06E /* CheckAccountVC.swift in Sources */,
+				813ADB481EACADE1008EE06E /* Content.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +453,7 @@
 				813AD9191EAB7272008EE06E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
