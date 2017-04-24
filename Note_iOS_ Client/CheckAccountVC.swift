@@ -17,7 +17,6 @@ class CheckAccountVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
     

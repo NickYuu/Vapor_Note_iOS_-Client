@@ -80,7 +80,7 @@
         <!--Navigation Controller-->
         <scene sceneID="6Gx-cK-scw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dF9-rB-dyY" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginVCNC" automaticallyAdjustsScrollViewInsets="NO" id="dF9-rB-dyY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tfH-vK-sbw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -175,7 +175,7 @@
             </objects>
             <point key="canvasLocation" x="1930" y="777"/>
         </scene>
-        <!--Perfect Note-->
+        <!--Vapor Note-->
         <scene sceneID="2R2-Bw-w5h">
             <objects>
                 <tableViewController storyboardIdentifier="MainTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EYB-Gk-ip0" customClass="MainTableViewController" customModule="Note_iOS__Client" customModuleProvider="target" sceneMemberID="viewController">
@@ -249,7 +249,7 @@
                             <outlet property="delegate" destination="EYB-Gk-ip0" id="Lib-XB-d3V"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Perfect Note" id="nh5-oT-4CT">
+                    <navigationItem key="navigationItem" title="Vapor Note" id="nh5-oT-4CT">
                         <barButtonItem key="leftBarButtonItem" title="登出" id="qYn-NM-KX3">
                             <connections>
                                 <action selector="tapLoginOutButton:" destination="EYB-Gk-ip0" id="a4l-bc-LM2"/>
@@ -346,7 +346,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1929" y="1595"/>
+            <point key="canvasLocation" x="1928.8" y="1594.4527736131936"/>
         </scene>
     </scenes>
     <resources>

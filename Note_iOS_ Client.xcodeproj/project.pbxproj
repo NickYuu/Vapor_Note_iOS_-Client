@@ -23,6 +23,7 @@
 		813ADB441EAC9645008EE06E /* MainPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB431EAC9645008EE06E /* MainPageCell.swift */; };
 		813ADB461EACA624008EE06E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB451EACA624008EE06E /* MainTableViewController.swift */; };
 		813ADB481EACADE1008EE06E /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB471EACADE1008EE06E /* Content.swift */; };
+		813ADB4A1EACBFAD008EE06E /* ContentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813ADB491EACBFAD008EE06E /* ContentDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		813ADB431EAC9645008EE06E /* MainPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageCell.swift; sourceTree = "<group>"; };
 		813ADB451EACA624008EE06E /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		813ADB471EACADE1008EE06E /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		813ADB491EACBFAD008EE06E /* ContentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentDetailViewController.swift; sourceTree = "<group>"; };
 		C1EBDC18098C649EEFCB7E2C /* Pods_Note_iOS__Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Note_iOS__Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				813AD91A1EAB7290008EE06E /* SupportingFile */,
 				813ADB431EAC9645008EE06E /* MainPageCell.swift */,
 				813ADB451EACA624008EE06E /* MainTableViewController.swift */,
+				813ADB491EACBFAD008EE06E /* ContentDetailViewController.swift */,
 			);
 			path = "Note_iOS_ Client";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				813ADB461EACA624008EE06E /* MainTableViewController.swift in Sources */,
 				813AD9091EAB7272008EE06E /* AppDelegate.swift in Sources */,
 				813ADB441EAC9645008EE06E /* MainPageCell.swift in Sources */,
+				813ADB4A1EACBFAD008EE06E /* ContentDetailViewController.swift in Sources */,
 				813AD9221EAB81DE008EE06E /* User.swift in Sources */,
 				813ADB3D1EAB91EC008EE06E /* LoginOrRegisterVC.swift in Sources */,
 				813AD9231EAB81DE008EE06E /* NpteAPI.swift in Sources */,

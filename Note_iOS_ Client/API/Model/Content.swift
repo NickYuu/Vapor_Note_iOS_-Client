@@ -21,13 +21,15 @@ class Content : Mappable{
     var content         : String?
     var user_id         : Int?
     var title           : String?
+    var id              : Int?
+//    var image           : Data?
     
     
     required init?(map: Map){}
     
-    init(_ content: String, _ user_id: Int, _ title: String){
+    init(_ content: String, _ title: String){
         self.content = content
-        self.user_id = user_id
+        self.user_id = UserInfo.shared.id
         self.title = title
     }
     
@@ -35,11 +37,15 @@ class Content : Mappable{
         content         <- map["content"]
         user_id         <- map["user_id"]
         title           <- map["title"]
+        id              <- map["id"]
+//        image           <- map["image"]
     }
     
     func toDic() -> [String:Any] {
+        let id = UserInfo.shared.id
         return ["content": content!,
-                "user_id": user_id!,
+                "user_id": id,
+//                "image":image!,
                 "title": title!]
     }
     

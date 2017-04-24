@@ -55,15 +55,16 @@ extension LoginOrRegisterVC {
                     NoteData.newUser(user)
                         .subscribe(onNext: {
                             UserInfo.shared.update($0)
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            let nav = storyboard.instantiateViewController(withIdentifier: "MainTableViewControllerNav")
+                            self.present(nav, animated: true, completion: nil)
                         }).addDisposableTo(self.bag)
                 }
                 else {
                     if self.pwdTF.text == UserInfo.shared.password {
-                        NoteData.contents(UserInfo.shared.id)
-                            .subscribe(onNext: {
-                                UserInfo.shared.contents = $0
-                            }).addDisposableTo(self.bag)
-                        print("OK")
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let nav = storyboard.instantiateViewController(withIdentifier: "MainTableViewControllerNav")
+                        self.present(nav, animated: true, completion: nil)
                     }
                     else {
                         self.navigationController?.popViewController(animated: true)

@@ -20,9 +20,12 @@ private extension String {
 }
 
 public enum NoteAPI {
-    case user(String)
-    case newUser([String:String])
-    case contents(Int)
+    case user(String)                   // 查詢用戶
+    case newUser([String:String])       // 新增用戶
+    case contents(Int)                  // 查詢所有Note
+    case deleteContent(Int)             // 刪除單筆Note
+    case addContent([String:Any])       // 新增一筆Note
+    case modifyContent(Int,[String:Any])    // 修改一筆Note
 }
 
 
@@ -38,6 +41,12 @@ extension NoteAPI: TargetType {
             return "user"
         case .contents:
             return "content"
+        case .deleteContent(let id):
+            return "content/\(id)"
+        case .addContent:
+            return "addcontent"
+        case .modifyContent(let id, _):
+            return "content/\(id)"
         }
     }
     
@@ -45,8 +54,12 @@ extension NoteAPI: TargetType {
         switch self {
         case .user, .contents:
             return .get
-        case .newUser:
+        case .newUser, .addContent:
             return .post
+        case .deleteContent:
+            return .delete
+        case .modifyContent:
+            return .put
         }
     }
     
@@ -58,14 +71,18 @@ extension NoteAPI: TargetType {
             return json
         case .contents(let id):
             return ["userid": id]
-//        default:
-//            return nil
+        case .addContent(let json):
+            return json
+        case .modifyContent(_, let json):
+            return json
+        default:
+            return nil
         }
     }
     
     public var parameterEncoding: ParameterEncoding {
         switch self {
-        case .user, .contents:
+        case .user, .contents, .deleteContent:
             return URLEncoding.default
         default:
             return JSONEncoding.default
